@@ -40,7 +40,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580460715632</updated>
-      <workItem from="1580460717707" duration="15442000" />
+      <workItem from="1580460717707" duration="21584000" />
     </task>
     <servers />
   </component>
@@ -48,14 +48,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1090" y="271" width="441" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1580481916924">
+    <state x="1090" y="271" width="441" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1580487594044">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1090" y="271" width="441" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1580481916924" />
-    <state x="1183" y="366" width="545" height="373" key="NewPhpClassDialog" timestamp="1580481115478">
+    <state x="1090" y="271" width="441" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1580487594044" />
+    <state x="1067" y="129" width="476" height="846" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580485967882">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1183" y="366" width="545" height="373" key="NewPhpClassDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580481115478" />
+    <state x="1067" y="129" width="476" height="846" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580485967882" />
+    <state x="1183" y="366" width="545" height="373" key="NewPhpClassDialog" timestamp="1580486540480">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1183" y="366" width="545" height="373" key="NewPhpClassDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580486540480" />
     <state x="978" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1580481365912">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

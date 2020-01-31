@@ -25,4 +25,5 @@ class Contact extends ControllerAbstract
         $this->setBody(self::TEMPLATE);
         $this->render();
     }
+
 }

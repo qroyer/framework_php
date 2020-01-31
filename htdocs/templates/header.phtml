@@ -1,1 +1,14 @@
-<h1>HEADER</h1>
+<html>
+    <head>
+    <?php
+    foreach($this->getCss() as $css){
+        echo('<link rel=\'stylesheet\' type=\'css\' href=\'css/' . $css . '\' />');
+    }
+
+    foreach ($this->getJs() as $js){
+        echo('<script type=\'text/javascript\' src=\'js/' . $js . '\'></script>');
+    }
+    ?>
+
+    </head>
+    <body>

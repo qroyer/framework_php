@@ -22,6 +22,10 @@ abstract class ControllerAbstract implements ControllerInterface
      */
     private $footer;
 
+    private $css = [];
+
+    private $js = [];
+
 
     /**
      *
@@ -30,6 +34,8 @@ abstract class ControllerAbstract implements ControllerInterface
     {
         $this->setFooter('footer.phtml');
         $this->setHeader('header.phtml');
+        $this->addCss('style.css');
+        $this->addJs('test.js');
     }
 
 
@@ -95,6 +101,32 @@ abstract class ControllerAbstract implements ControllerInterface
     {
         $this->footer = $footer;
         return $this;
+    }
+
+    public function addCss($css)
+    {
+        array_push($this->css , $css);
+    }
+
+    public function addJs($js)
+    {
+        array_push($this->js, $js);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCss()
+    {
+        return $this->css;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getJs()
+    {
+        return $this->js;
     }
 
 
