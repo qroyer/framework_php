@@ -50,13 +50,13 @@ class Router
      * @throws \Exception
      */
     private function prepare(){
-        if(!isset($this->routes[$_SERVER['REQUEST_URI']])){
+        if(!isset($this->routes[$_SERVER['REDIRECT_URL']])){
            $this->class = 'App\Controller\Error';
-           $this->method = 'error';
+           $this->method = 'errorPath';
            return;
         }
 
-        $route = $this->routes[$_SERVER['REQUEST_URI']];
+        $route = $this->routes[$_SERVER['REDIRECT_URL'] ];
         $this->class = array_shift($route);
         $this->method = array_shift($route);
     }

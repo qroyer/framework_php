@@ -8,5 +8,9 @@ return array (
     '/action' =>
         array (
             'App\Controller\Action' , 'index'
+        ),
+    '/' =>
+        array (
+            'App\Controller\Index' , 'index'
         )
 );

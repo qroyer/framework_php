@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d17f3b51-eca6-40e4-ba74-65e82956f9fa" name="Default Changelist" comment="" />
+    <list default="true" id="d17f3b51-eca6-40e4-ba74-65e82956f9fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Framework/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/mysql/ca-key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../data/mysql/ca-key.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/mysql/client-key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../data/mysql/client-key.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/mysql/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/../data/mysql/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/../data/mysql/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/../data/mysql/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/../data/mysql/ibtmp1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/mysql/private_key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../data/mysql/private_key.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/mysql/server-key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../data/mysql/server-key.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controller/Action.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/Action.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controller/Error.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/Error.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Framework/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Framework/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/end.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/end.phtml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +29,11 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1X9aMQVV7XI5irxVR6JZN75oFGC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -20,6 +41,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
@@ -40,7 +62,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580460715632</updated>
-      <workItem from="1580460717707" duration="21857000" />
+      <workItem from="1580460717707" duration="22118000" />
+      <workItem from="1580638259977" duration="7550000" />
     </task>
     <servers />
   </component>
@@ -56,10 +79,14 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1067" y="129" width="476" height="846" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580485967882" />
-    <state x="1183" y="366" width="545" height="373" key="NewPhpClassDialog" timestamp="1580486540480">
+    <state x="1183" y="366" width="545" height="373" key="NewPhpClassDialog" timestamp="1580644713231">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1183" y="366" width="545" height="373" key="NewPhpClassDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580486540480" />
+    <state x="1183" y="366" width="545" height="373" key="NewPhpClassDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580644713231" />
+    <state x="961" y="284" width="709" height="538" key="find.popup" timestamp="1580640451048">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="961" y="284" width="709" height="538" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1580640451048" />
     <state x="978" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1580481365912">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

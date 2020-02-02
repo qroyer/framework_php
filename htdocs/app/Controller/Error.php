@@ -11,10 +11,18 @@ use App\Framework\ControllerAbstract;
  */
 class Error extends controllerAbstract
 {
-    public function error()
+    public function errorMethod()
     {
         $this->loadLayout();
-        $this->setBody('errorPath.phtml');
+        $this->setBody('errorMethod.phtml');
+        $this->render();
+    }
+
+
+    public function errorPath()
+    {
+        $this->loadLayout();
+        $this->setBody('errorMethod.phtml');
         $this->render();
     }
 

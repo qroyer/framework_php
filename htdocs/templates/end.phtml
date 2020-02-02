@@ -1,6 +1,11 @@
+<?php
+    $data = $this->getData();
+?>
+<h2>Bienvenue!</h2>
 <p>
-Je m'appelle <?= $this->getData()->getFirstName(); ?>  Je m'appelle <?= $this->getData()->getLastName(); ?>
-    mon adresse mail est <?= $this->getData()->getEmail(); ?> et voici mon commentaire :
-    <?= $this->getData()->getCommentaire(); ?>
+    Votre prenom : <?= $data->getFirstname();  ?></br>
+    Votre Nom : <?= $data->getLastname();  ?></br>
+    Votre Email : <?= $data->getEmail();  ?></br>
+    Votre Commentaire : <?= $data->getCommentaire();  ?></br>
 
 </p>

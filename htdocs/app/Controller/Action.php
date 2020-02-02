@@ -5,9 +5,9 @@ namespace App\Controller;
 
 
 use App\Customer;
-use App\Framework\ControllerAbstract;
+use App\Framework\PostController;
 
-class Action extends ControllerAbstract
+class Action extends PostController
 {
 
     const TEMPLATE = 'end.phtml';
@@ -21,14 +21,28 @@ class Action extends ControllerAbstract
 
     public function getData()
     {
-        $prenom = isset($_POST['prenom']) ? $_POST['prenom'] : 'Inconnu';
-        $nom = isset($_POST['nom']) ? $_POST['nom'] : 'Inconnu';
-        $email = isset($_POST['email']) ? $_POST['email'] : 'Inconnu';
-        $commentaire = isset($_POST['commentaire']) ? $_POST['commentaire'] : 'Inconnu';
 
-        $customer = new Customer($nom,$prenom,$email,$commentaire);
+       if($this->isPost())
+       {
+           $data = $this->getParams();
 
-        return $customer;
+           $customer = new Customer(
+               $data['prenom'],
+               $data['nom'],
+               $data['email'],
+               $data['commentaire']
+           );
+
+           return $customer;
+       }
+       else{
+           /*
+            * je ne savais pas trop comment traiter le fait que les data soient passées par la mauvaise method
+            * jai donc fait l'appel a un template qui afficherai l'erreur
+            */
+           call_user_func([new \App\Controller\Error(), 'errorMethod']);
+       }
+
     }
 
 }
