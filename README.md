@@ -15,8 +15,8 @@ le formulaire envoie les datas vers le controller Action.php
  les controllers extendents la classe ControllerAbstract qui a des methodes permettant de charger le 'layout'
  et d'y mettre un templates déclaré dans le controller
 
-
-
+# `http://localhost:8081`
+phpmyadmin url 
 
 # `http://localhost:8080/urlrandom`
   
