@@ -1,6 +1,7 @@
 <?php
 
-namespace App;
+namespace App\Model;
+
 
 class Customer
 {
@@ -17,6 +18,9 @@ class Customer
      */
     private $email;
 
+    /**
+     * @var
+     */
     private $commentaire;
 
     /**

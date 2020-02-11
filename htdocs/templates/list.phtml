@@ -1,0 +1,9 @@
+<div id="body">
+    <ul>
+        <?php
+        foreach ($this->getListCustomer() as $customer){
+            echo '<li>'.$customer["id"].' '.$customer["firstname"].' '.$customer["lastname"].' '.$customer["email"].' '.$customer["commentaire"].' <a href="/contact/'.$customer["id"].'">Voir plus d\'info</a></li>';
+        }
+        ?>
+    </ul>
+</div>

@@ -26,6 +26,11 @@ class Router
     private $method;
 
     /**
+     * @var
+     */
+    private $parameters = [];
+
+    /**
      * Router constructor.
      */
     public function __construct()
@@ -38,27 +43,40 @@ class Router
      */
     public function exec()
     {
-        try{
+        try {
             $this->prepare();
-            call_user_func([new $this->class, $this->method]);
-        }catch (\Exception $e){
-            call_user_func([new $this->class, $this->method]);
+            call_user_func([new $this->class, $this->method], $this->parameters);
+        } catch (\Exception $e) {
+            $params = array($e->getMessage());
+            call_user_func_array([new $this->class, $this->method], $params);
+            die;
         }
     }
 
     /**
      * @throws \Exception
      */
-    private function prepare(){
-        if(!isset($this->routes[$_SERVER['REDIRECT_URL']])){
-           $this->class = 'App\Controller\Error';
-           $this->method = 'errorPath';
-           return;
+    private function prepare()
+    {
+        foreach ($this->routes as $key => $val) {
+            if (strpos($key, '#') === 0 && preg_match($key, $_SERVER["REQUEST_URI"])) {
+                $var = preg_split("#\/#", $_SERVER["REQUEST_URI"])[2];
+                $route = $this->routes[$key];
+                $this->class = array_shift($route);
+                $this->method = array_shift($route);
+                array_push($this->parameters, $var);
+                return 0;
+            }
         }
-
-        $route = $this->routes[$_SERVER['REDIRECT_URL'] ];
-        $this->class = array_shift($route);
-        $this->method = array_shift($route);
+        if (!isset($this->routes[$_SERVER['REDIRECT_URL']])) {
+            $this->class = 'App\Controller\Error';
+            $this->method = 'errorPath';
+            return 0;
+        }else {
+            $route = $this->routes[$_SERVER["REQUEST_URI"]];
+            $this->class = array_shift($route);
+            $this->method = array_shift($route);
+        }
     }
 
 }

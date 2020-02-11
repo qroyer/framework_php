@@ -4,8 +4,9 @@
 namespace App\Controller;
 
 
-use App\Customer;
+use App\Model\Customer;
 use App\Framework\PostController;
+use App\Model\Repository\CustomerRepository;
 
 class Action extends PostController
 {
@@ -32,6 +33,9 @@ class Action extends PostController
                $data['email'],
                $data['commentaire']
            );
+           $repo = new CustomerRepository();
+           $repo->save($customer);
+
 
            return $customer;
        }

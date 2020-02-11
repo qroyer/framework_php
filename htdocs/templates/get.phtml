@@ -1,0 +1,12 @@
+<?php
+    $data = $this->getCustomer();
+?>
+<div id="body">
+    <h2>Infos sur le commentaire numéro  <?= $data['id'] ?> :</h2>
+    <p>
+        <?=
+            $data['id'].' '.$data['firstname'].' '.$data['lastname'].' '.$data['email'].'</br> Commentaire : '.$data['commentaire'].'</br;>'
+        ?>
+    </p>
+    <a href="/contact/list">Revenir à la liste</a>
+</div>
