@@ -45,3 +45,7 @@ CREATE TABLE customer (
     commentaire VARCHAR(30) not null,
     constraint pk_customer primary key (id)
 );
+
+```
+
+ajout des routes dyanmiques et affichage des commentaires en entrant la route  `http://localhost:8080/contact/{id}`

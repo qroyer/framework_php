@@ -5,3 +5,8 @@ data/mysql/*
 .idea/*
 
 data/.
+.idea
+.php_cs.cache
+log
+/data/
+!data/.keep
