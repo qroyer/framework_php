@@ -17,9 +17,8 @@ return array (
         array (
             'App\Controller\ActionList' , 'index'
         ),
-    '#contact\/[0-9]*$#' =>
+    '/contact/{id}' =>
         array (
             'App\Controller\ActionGet' , 'index'
         )
-
 );
